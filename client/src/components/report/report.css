@@ -1,0 +1,65 @@
+.report {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    height: 7vw;
+    background-color: #fff;
+    border-radius: .5vw;
+    margin-bottom: 10px;
+    padding: .75vw 1.5vw;
+
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+}
+
+.report:last-child {
+    margin-bottom: 2vw;
+}
+
+.generalInformation {
+    grid-column: 1 / 2;
+}
+
+.objectInformation {
+    grid-column: 2 / 3;
+}
+
+.buttonContainer {
+    grid-column: 3 / 4;
+}
+
+.generalInformation,
+.objectInformation,
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.reportID {
+    font-size: 1.25vw;
+}
+
+button {
+    width: 100%;
+    padding: .5vw 0px;
+    border-radius: .5vw;
+    border: none;
+    background-color: rgb(59, 95, 255);
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 85%;
+}
+
+button:nth-child(2) {
+    margin-top: 5px;
+    background-color: rgb(255, 88, 116);
+}
+
+.closed, .closed:hover {
+   opacity: 50%;  
+   cursor: initial;
+}

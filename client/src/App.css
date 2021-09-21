@@ -1,0 +1,48 @@
+:root, html, body, * {
+  padding: 0;
+  margin: 0;
+  font-size: 1.65vw;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.App {
+  background-color: rgb(71, 124, 170);
+
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+#title,
+#openReportsList,
+#closedReportsList,
+#reportsSign {
+  grid-column: 2 / 3;
+  margin: 20px;
+  color: #fff;
+  text-transform: none;
+}
+
+#title {
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+
+#openReportsList {
+  font-size: 2vw;
+  margin: 2vw 0 20px 20px;
+}
+
+#closedReportsList {
+  margin: 5vw 0 20px 20px;
+  font-size: 2vw;
+}
+
+#reportsSign {
+  font-size: 1.5vw;
+}
+
+#reportsSign:nth-child(2) {
+  margin: 10px 0px 0px 20px;
+}
