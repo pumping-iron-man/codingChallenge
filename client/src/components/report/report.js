@@ -1,6 +1,8 @@
 import React from "react";
 import './report.css';
 
+
+// report is a child component and gets created for every report in file
 const Report = ({data, index, closingFlag, takeAction}) => {
 
   return (

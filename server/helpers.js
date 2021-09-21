@@ -1,5 +1,6 @@
 import { readFileSync, writeFileSync } from "fs"
 
+// get data from file (at get-request)
 export const getJSONdata = (file) => {
     try{
         const data = readFileSync(file)
@@ -11,6 +12,7 @@ export const getJSONdata = (file) => {
     }
 } 
 
+//update data in file at put-request
 export const updateJSONdata = (file, objID) => {
 
     const dataObj = getJSONdata(file)    
